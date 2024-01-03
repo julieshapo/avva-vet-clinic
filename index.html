@@ -8,35 +8,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header>
       <div class="container header">
-        <a class="logo" href="/index.html">АВВА</a>
-        <nav>
-          <ul class="header-nav">
-            <li class="header-nav-item">Головна</li>
-            <li class="header-nav-item">Послуги</li>
-            <li class="header-nav-item">Спеціалісти</li>
-            <li class="header-nav-item">Контакти</li>
+        <a class="logo" href="/index.html">ABBA</a>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Головна</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Послуги</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Спеціалісти</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="">Контакти</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section>
-        <p>Ветеринарна клініка</p>
-        <h1>Ваші тварини важливі для нас</h1>
-        <p>
-          Ми піклуємося про здоров'я ваших тварин кожен день з 9:00 до 19:00 за
-          попереднім записом.
-        </p>
-        <a href="tel:+380673875893">Записатися на прийом</a>
+      <section class="section hero">
+        <div class="container hero-container">
+          <div>
+            <h1 class="hero-title">Ветеринарна клініка</h1>
+            <p class="hero-subtitle">Ваші тварини важливі для нас</p>
+            <p class="hero-text">
+              Ми піклуємося про здоров'я ваших тварин кожен день<br />
+              з 9:00 до 19:00 за попереднім записом.
+            </p>
+            <a class="hero-contact" href="tel:+380673875893"
+              >Записатися на прийом</a
+            >
+          </div>
+          <img
+            class="hero-image"
+            src="./src/images/hero/7abed1c355b4aff3ca31596a9f510f5f.png"
+            alt="пес у піжамі"
+            width="700"
+            height="700"
+          />
+        </div>
       </section>
-      <section>
+      <section class="section">
         <h2>Наші послуги</h2>
         <p>Ми пропонуємо широкий спектр послуг, зокрема наведені нижче</p>
         <ul>
@@ -99,7 +120,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="section">
         <h2>Наші спеціалісти</h2>
         <ul>
           <li>
@@ -119,7 +140,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="section">
         <h2></h2>
         <ul>
           <li><a href="tel:+"></a></li>
