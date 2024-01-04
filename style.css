@@ -59,7 +59,7 @@ address {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 
 .list {
@@ -263,9 +263,13 @@ img {
 /* SERVICES */
 
 .services {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.35);
 }
+
 .section-title {
   font-size: 48px;
   font-weight: 500;
@@ -275,6 +279,7 @@ img {
 
   color: var(--primary-text-color);
 }
+
 .section-desc {
   font-size: 24px;
   line-height: 1.15;
@@ -284,12 +289,14 @@ img {
 
   color: var(--secondary-text-color);
 }
+
 .services-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 48px;
 }
+
 .services-item {
   display: flex;
   flex-direction: column;
@@ -307,12 +314,14 @@ img {
   background: var(--primary-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .services-icon {
   fill: var(--main-blue);
   background-color: var(--icon-background-color);
   border-radius: 50%;
   border: 15px solid var(--icon-background-color);
 }
+
 .services-title {
   font-size: 24px;
   line-height: 1.15;
@@ -323,10 +332,55 @@ img {
 
   color: var(--main-purple);
 }
+
 .services-desc {
   font-size: 18px;
   line-height: 1.15;
   letter-spacing: 0.9px;
 
   color: var(--secondary-text-color);
+}
+
+/* TEAM */
+
+.team {
+  margin-bottom: 64px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 64px;
+}
+
+.team-item {
+  text-align: center;
+  border-radius: 20px;
+
+  padding-bottom: 16px;
+
+  background-color: var(--primary-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.team-pic {
+  border-radius: 20px;
+  /* border: 1px solid #aecef4; */
+
+  margin-bottom: 16px;
+}
+
+.team-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.15;
+
+  margin-bottom: 5px;
+
+  color: var(--main-purple);
+}
+.team-text {
+  font-size: 20px;
+  line-height: 1.15;
 }
