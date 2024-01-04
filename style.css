@@ -366,7 +366,6 @@ img {
 
 .team-pic {
   border-radius: 20px;
-  /* border: 1px solid #aecef4; */
 
   margin-bottom: 16px;
 }
@@ -381,6 +380,21 @@ img {
   color: var(--main-purple);
 }
 .team-text {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.15;
+}
+
+/* CONTACTS */
+
+.contacts-wrap {
+  display: flex;
+}
+
+.contacts-list {
+}
+
+.contacts-item {
+}
+
+.contacts-map {
 }
