@@ -18,13 +18,7 @@ body {
   line-height: 1.15;
 }
 
-/* UTILS */
-
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
+/* RESET & UTILS */
 
 h1,
 h2,
@@ -60,18 +54,39 @@ img {
   max-width: 100%;
 }
 
+.container {
+  /* width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 70px;
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 60px;
+    width: 1200px;
+  } */
+}
+
 /* SECTION */
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 64px;
+  padding-bottom: 64px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  } */
 }
 
 /* LOGO */
 
 .logo {
   font-family: "Courgette", sans-serif;
-  font-size: 72px;
+  font-size: 82px;
   color: var(--main-purple);
 
   transition: color var(--trans-duration) var(--cubic);
@@ -89,6 +104,8 @@ img {
   justify-content: center;
   align-items: center;
 
+  width: 100%;
+
   border-radius: 20px;
 
   font-weight: 700;
@@ -102,6 +119,10 @@ img {
 
   transition: color var(--trans-duration) var(--cubic),
     background-color var(--trans-duration) var(--cubic);
+
+  @media screen and (min-width: 768px) {
+    width: 80px;
+  }
 }
 
 .btn:hover,
@@ -124,8 +145,12 @@ img {
 }
 
 .header-nav-list {
-  display: flex;
-  gap: 64px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 64px;
+  }
 }
 
 .header-nav-link {
@@ -147,13 +172,15 @@ img {
 /* HERO */
 
 .hero {
-  padding-top: 0;
-  padding-bottom: 0px;
+  padding-top: 42px;
+  padding-bottom: 64px;
 }
 
 .hero-container {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .hero-title {
@@ -164,6 +191,8 @@ img {
   text-transform: capitalize;
   line-height: calc(36 / 24);
   letter-spacing: 2.04px;
+
+  width: 100%;
 
   margin-left: 136px;
   margin-bottom: 28px;
@@ -213,21 +242,33 @@ img {
 }
 
 .hero-subtitle::after {
-  content: "";
-  display: inline-block;
+  display: none;
 
-  position: absolute;
-  top: -50px;
-  right: -420px;
-  z-index: -1;
+  @media screen and (min-width: 768px) {
+    content: "";
+    display: inline-block;
 
-  width: 300px;
-  height: 300px;
+    position: absolute;
+    top: -50px;
+    right: -420px;
+    z-index: -1;
 
-  border-radius: 50%;
-  border: 40px solid rgba(255, 255, 255, 0.25);
+    width: 300px;
+    height: 300px;
 
-  background-color: transparent;
+    border-radius: 50%;
+    border: 40px solid rgba(255, 255, 255, 0.25);
+
+    background-color: transparent;
+  }
+}
+
+.hero-image {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 /* SERVICES */
@@ -238,6 +279,7 @@ img {
 }
 
 .section-title {
+  width: 100%;
   font-size: 48px;
   font-weight: 500;
   line-height: 1.15;
@@ -248,6 +290,7 @@ img {
 }
 
 .section-desc {
+  width: 100%;
   font-size: 24px;
   line-height: 1.15;
   letter-spacing: 1.2px;
@@ -258,19 +301,28 @@ img {
 }
 
 .services-list {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 48px;
+  align-items: center; */
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+  }
 }
 
 .services-item {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   gap: 64px;
 
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
 
   padding: 32px;
 
@@ -280,6 +332,11 @@ img {
   border-radius: 10px;
   background: var(--primary-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media screen and (min-width: 768px) {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .services-icon {
@@ -316,9 +373,13 @@ img {
 
 .team-list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: start;
   gap: 64px;
+
+  @media screen and (min-width: 768px) {
+  }
 }
 
 .team-item {
@@ -444,15 +505,6 @@ img {
   text-align: center;
 }
 
-.footer-wrap {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 94px; */
-
-  /* margin-bottom: 94px; */
-}
-
 .footer-logo {
   font-size: 94px;
 }
@@ -464,7 +516,7 @@ img {
   font-weight: 500;
   text-transform: uppercase;
 
-  margin-bottom: 124px;
+  margin-bottom: 94px;
 
   color: var(--primary-text-color);
 }
@@ -485,7 +537,7 @@ img {
 .footer-btn {
   font-size: 14px;
   padding: 24px;
-  margin-bottom: 64px;
+  margin-bottom: 124px;
 }
 
 .copyright {
