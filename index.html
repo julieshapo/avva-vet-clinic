@@ -7,7 +7,7 @@
     <title>АВВА Клініка для тварин</title>
     <meta
       name="description"
-      content="Ветеринарна клініка в Білогородкі Київської області "
+      content="Ветеринарна клініка в Білогородкі Київська область"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   </head>
   <body>
     <header>
@@ -39,7 +40,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="main">
       <section class="section hero">
         <div class="container hero-container">
           <div>
@@ -156,18 +157,19 @@
       <section class="section">
         <div class="container">
           <h2 id="team" class="section-title team">Наші спеціалісти</h2>
-          <ul class="team-list">
-            <li class="team-item">
+          <div class="slider team-list">
+            <div class="team-item slider-item">
               <img
                 class="team-pic"
                 src="./src/images/team/doc-3.jpg"
                 alt="фото головного лікаря"
                 width="347"
+                height="722"
               />
               <h3 class="team-title">Головний лікар</h3>
               <p class="team-text">Ольга Кобилянська</p>
-            </li>
-            <li class="team-item">
+            </div>
+            <div class="team-item slider-item">
               <img
                 class="team-pic"
                 src="./src/images/team/doc-2.jpg"
@@ -177,8 +179,8 @@
               />
               <h3 class="team-title">Терапевт</h3>
               <p class="team-text">Іван Франко</p>
-            </li>
-            <li class="team-item">
+            </div>
+            <div class="team-item slider-item">
               <img
                 class="team-pic"
                 src="./src/images/team/doc-1.jpg"
@@ -188,8 +190,8 @@
               />
               <h3 class="team-title">Медбрат</h3>
               <p class="team-text">Тарас Шевченко</p>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section contacts">
@@ -251,7 +253,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div>
+        <div footer="footer-wrap">
           <a class="logo footer-logo" href="/index.html">ABBA</a>
           <p class="footer-logo-text">Клініка для тварин</p>
         </div>
@@ -273,5 +275,9 @@
     </footer>
 
     <script type="module" src="/main.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </body>
 </html>

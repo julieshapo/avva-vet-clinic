@@ -1,1 +1,1 @@
-import "./style.css";
+import "./src/js/team-slider";
